@@ -1,0 +1,43 @@
+html, body {
+  margin: 0; 
+  padding: 0;
+  height: 100%;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+#main-widget-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #222;
+}
+
+/* Ajusta o widget para ocupar toda a tela com escala maior */
+#ww_9cca64404b2aa {
+  width: calc(100vw / 1.5) !important;
+  height: calc(100vh / 1.5) !important;
+  max-width: calc(100vw / 1.5) !important;
+  max-height: calc(100vh / 1.5) !important;
+  transform: scale(1.5) !important;
+  transform-origin: center center !important;
+}
+
+/* Esconder widgets menores (que não vamos usar) */
+#ww_5fb4d960d88,
+#ww_705d46a967a49 {
+  display: none !important;
+}
+
+/* Responsividade: esconda tudo se for menor que 1000px */
+@media (max-width: 1000px) {
+  #main-widget-container {
+    display: none;
+  }
+}
