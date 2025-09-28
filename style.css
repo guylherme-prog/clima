@@ -1,7 +1,7 @@
 /* Centraliza o widget dentro do painel */
 #ww_0d17156ce1e24 {
   width: 100%;
-  max-width: 800px;   /* largura máxima */
+  max-width: 1000px;   /* largura máxima */
   height: 200px;      /* altura do widget */
   margin: auto;
   display: flex;
